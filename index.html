@@ -12,7 +12,7 @@ layout: default
     <li class="col-md-4 list-unstyled media mb-5 position-relative">
         <span class="align-self-center mr-3 h1">{{ post.emoji }}</span>
         <div class="media-body">
-            <h4 class="mt-0"><a href="{{ post.permalink }}" class="stretched-link">{{ post.title }}</a></h4>
+            <h4 class="mt-0"><a href="{{ post.permalink | relative_url }}" class="stretched-link"  title="{{ post.subtitle }}">{{ post.title }}</a></h4>
             <p class="mb-0">{{ post.subtitle }}</p>
         </div>
     </li>

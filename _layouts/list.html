@@ -35,7 +35,7 @@ layout: default
         <ul>
             {% for post in site.posts %}
             <li>
-                <a href="{{ post.permalink }}" title="{{ post.subtitle }}">{{ post.title }}</a>
+                <a href="{{ post.permalink | relative_url }}" title="{{ post.subtitle }}">{{ post.title }}</a>
             </li>
             {% endfor %}
         </ul>
