@@ -1,0 +1,61 @@
+ul.utilists-preview {
+    padding:0;
+}
+.utilists-preview a {
+    color: #000;
+    text-decoration: none;
+    border-bottom:1px solid #b8b8b8;
+}
+.utilists-preview a:hover {
+    color: #000;
+    text-decoration: none;
+    border: none;
+}
+
+#emoji-jumbo {
+    font-size: 5em;
+}
+
+ul.utilist {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+ul.utilist li.done {
+    text-decoration: line-through;
+    color:#CCC;
+}
+
+#awards {
+    margin-top: 50px;
+    font-size: 0.85em;
+}
+#awards #techbrunch {
+    color: #089e00;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+#awards #timer {
+    font-family: serif;
+    font-size: 1.3em;
+}
+#awards #mashed {
+    color: #00aeef;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+footer#page-footer {
+    text-align: center;
+    font-size: 0.8em;
+    margin:20px 0;
+}
+
+@media (max-width: 576px) {
+    .jumbotron #emoji-jumbo {
+        font-size: 3rem;
+    }
+    .jumbotron h1 {
+        font-size: 2rem;
+    }
+}

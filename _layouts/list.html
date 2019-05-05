@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<nav class="navbar navbar-light">
+    <a href="/" class="navbar-brand">uti<strong>lists</strong></a>
+    <span class="navbar-text">{{ site.description }}</span>
+</nav>
+
+<div class="jumbotron">
+    <div class="media">
+        <span id="emoji-jumbo" class="align-self-center mr-3">{{ page.emoji }}</span>
+        <div class="media-body">
+            <h1 class="display-4">{{ page.title }}</h1>
+            <p class="lead">{{ page.subtitle }}</p>
+        </div>
+    </div>
+</div>
+<p>
+    {{ page.description }}
+</p>
+
+<div class="row">
+    <div class="col-lg-9">
+        {% for groups in page.items %}
+        <h4>{{ groups.name }}</h4>
+        <ul class="utilist list-group">
+            {% for item in groups.items %}
+            <li class="list-group-item list-group-item-action">{{ item }}</li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </div>
+    <div class="col-lg-3">
+        <h5>Other checklists</h5>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ post.permalink }}" title="{{ post.subtitle }}">{{ post.title }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<nav class="navbar">
+</nav>
+<div class="jumbotron">
+    <h1 class="display-4">uti<strong>lists</strong></h1>
+    <h2 class="lead">{{ site.description }}</h2>
+</div>
+<ul class="row utilists-preview">
+    {% for post in site.posts %}
+    <li class="col-md-4 list-unstyled media mb-5 position-relative">
+        <span class="align-self-center mr-3 h1">{{ post.emoji }}</span>
+        <div class="media-body">
+            <h4 class="mt-0"><a href="{{ post.permalink }}" class="stretched-link">{{ post.title }}</a></h4>
+            <p class="mb-0">{{ post.subtitle }}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<div id="awards">
+    <h5>They talk about us...</h5>
+    <div class="row">
+        <blockquote class="col-sm-4">
+            <p>
+                You won't forget *that* thing anymore in your holiday trips.
+            </p>
+            <footer><cite id="techbrunch">TechBrunch</cite></footer>
+        </blockquote>
+        <blockquote class="col-sm-4">
+            <p>
+                The best tool in the market for clueless people. Perfect for fishes... oh yeah, fishes forget everything.
+            </p>
+            <footer><cite id="timer">The New Yankee Timer</cite></footer>
+        </blockquote>
+        <blockquote class="col-sm-4">
+            <p>
+                How many times have you forgotten your smartphone charger when travelling? With this tool... never again!
+            </p>
+            <footer><cite id="mashed">Mashed</cite></footer>
+        </blockquote>
+    </div>
+</div>
