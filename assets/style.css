@@ -26,6 +26,21 @@ ul.utilist li.done {
     color:#CCC;
 }
 
+p#contribute small {
+    margin-right: 20px;
+}
+
+
+p#contribute a {
+    text-decoration: none;
+    color: #6a737d;
+    border-bottom: 1px solid #949ea8;
+}
+
+p#contribute a:hover {
+    border:none;
+}
+
 #awards {
     margin-top: 50px;
     font-size: 0.85em;
