@@ -27,7 +27,7 @@
     <body>
         <div class="container">
             {{ content }}
-            <footer id="page-footer">utilists &copy; 2020 <a href="https://www.adriavalles.net">adrià vallès</a> </footer>
+            <footer id="page-footer">utilists &copy; {{ site.time | date: "%Y" }} <a href="https://www.adriavalles.net">adrià vallès</a> </footer>
         </div>
         <script src="{{ "/assets/scripts.js" | relative_url }}" type="application/javascript"></script>
     </body>
