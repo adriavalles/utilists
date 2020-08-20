@@ -7,7 +7,12 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
+        {% if layout.is_list %}
+        <title>{{page.title}} - {{page.subtitle}} | {{site.title}}</title>
+        {% seo title=false %}
+        {% else %}
         {% seo %}
+        {% endif %}
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
@@ -27,7 +32,7 @@
     <body>
         <div class="container">
             {{ content }}
-            <footer id="page-footer">utilists &copy; {{ site.time | date: "%Y" }} <a href="https://www.adriavalles.net">adrià vallès</a> </footer>
+            <footer id="page-footer">utilists &copy; {{ site.time | date: "%Y" }} <a href="https://www.adriavalles.net" title="Adrià Vallès">adrià vallès</a> </footer>
         </div>
         <script src="{{ "/assets/scripts.js" | relative_url }}" type="application/javascript"></script>
     </body>
