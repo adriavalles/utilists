@@ -16,14 +16,12 @@ items:
         - 'Goggles'
         - 'Swim cap'
         - 'Dry outfits (including underwear!)'
-
     - name: Bath
       items: 
         - 'Towel'
         - 'Deodorant'
         - 'Soap'
         - 'Shampoo'
-
     - name: Others
       items:
         - 'Beach ball'

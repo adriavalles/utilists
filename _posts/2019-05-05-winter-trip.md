@@ -6,7 +6,7 @@ categories: [Winter, Trips]
 
 emoji: "❄️"
 subtitle: "Winter vacation packing checklist."
-description: "Travelling 15 days to the Alps? Planning a trip to Stockholm? Here you have the list of all the things you cannot forget to pack in your suitcase when you are going to be some days in the a cold place."
+description: "Traveling 15 days to the Alps? Planning a trip to Stockholm? Here you have the list of all the things you cannot forget to pack in your suitcase when you are going to be some days in the a cold place."
 
 items:
     - name: Essential

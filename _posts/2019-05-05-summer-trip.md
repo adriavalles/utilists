@@ -6,7 +6,7 @@ categories: [Summer, Trips]
 
 emoji: "☀️"
 subtitle: "Summer vacation packing checklist."
-description: 'Travelling 20 days to the Caribbean? Planning a trip to Barcelona? Here you have the list of all the things you cannot forget to pack in your suitcase when you are going to be some days in the beach.'
+description: 'Traveling 20 days to the Caribbean? Planning a trip to Barcelona? Here you have the list of all the things you cannot forget to pack in your suitcase when you are going to be some days in the beach.'
 
 items:
     - name: Essential

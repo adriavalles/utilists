@@ -31,7 +31,7 @@ items:
         - 'Ergonomic mouse'
         - 'Fast, reliable, internet connection'
         - 'VPN'
-        - 'Noise-cancelling headphones'
+        - 'Noise-canceling headphones'
         - 'Microphone'
     - name: Tools
       items:
