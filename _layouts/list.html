@@ -20,7 +20,7 @@ layout: default
 </p>
 
 <div class="row">
-    <div class="col-lg-9">
+    <div class="col-lg-8">
         {% for groups in page.items %}
         <h4>{{ groups.name }}</h4>
         <ul class="utilist list-group">
@@ -30,14 +30,19 @@ layout: default
         </ul>
         {% endfor %}
     </div>
-    <div class="col-lg-3">
-        <h5>Other checklists</h5>
+    <div class="col-lg-4">
+        {% for category in page.categories %}
+        {% if site.categories[category].size <= 1%} {% continue %} {% endif %}
+        <h5>Other {{ category }} checklists</h5>
         <ul>
-            {% for post in site.posts %}
+            {% for post in site.categories[category] %}
+            {% if post == page %} {% continue %} {% endif %}
             <li>
-                <a href="{{ post.permalink | relative_url }}" title="{{ post.subtitle }}">{{ post.title }}</a>
+                <a href="{{ post.permalink | relative_url }}" title="{{ post.subtitle }}">{{ post.title }}</a><br/>
+                {{ post.subtitle }}
             </li>
             {% endfor %}
         </ul>
+        {% endfor %}
     </div>
 </div>

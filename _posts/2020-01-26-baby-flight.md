@@ -2,7 +2,7 @@
 layout: list
 title: "Flying with a baby"
 permalink: "/baby-flight-must-have/"
-categories: [Baby]
+categories: [Baby, Trips]
 
 emoji: "👨‍👩‍👦"
 subtitle: "The must-have things to fly with a baby."
