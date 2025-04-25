@@ -1,11 +1,11 @@
 ---
 layout: list
-title: "Flying with a baby"
-permalink: "/baby-flight-must-have/"
+title: "Baby Travel"
+permalink: "/baby-travel-essentials-and-gear/"
 categories: [Baby, Trips]
 
 emoji: "🧑‍🍼"
-subtitle: "Essential items for flying with a baby."
+subtitle: "Essential items for a stress-free flight with your baby."
 description: "Comprehensive guide to flying with a baby: essential items checklist, travel tips, and must-have gear for a smooth stress-free journey with your little one. Learn how to prepare for your flight, what to pack in your carry-on, and how to keep your baby happy and comfortable during air travel. Perfect for first-time parents and experienced travelers alike."
 
 items:

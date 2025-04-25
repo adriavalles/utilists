@@ -1,11 +1,11 @@
 ---
 layout: list
-title: "Working from home"
-permalink: "/remote-checklist-work-from-home/"
+title: "Remote Office"
+permalink: "/remote-work-office-setup/"
 categories: [Work]
 
 emoji: "🖥️"
-subtitle: "The ultimate remote work setup guide."
+subtitle: "Essential tools and setup for a productive home office."
 description: "Master remote work with our quick and comprehensive guide covering everything from ergonomic home office setup to productivity tools and team collaboration best practices. Perfect for remote workers, digital nomads, and distributed teams."
 
 items:

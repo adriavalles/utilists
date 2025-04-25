@@ -1,11 +1,11 @@
 ---
 layout: list
-title: "Swimming pool"
-permalink: "/swimming-pool-checklist/"
+title: "Pool Day"
+permalink: "/pool-day-essentials-and-gear/"
 categories: [Summer, Gym]
 
 emoji: "🏊"
-subtitle: 'Ultimate Swimming Pool Packing List'
+subtitle: "Essential items for a perfect day at the pool."
 description: 'The most complete checklist for your pool day: from essential swimming gear to hygiene items and entertainment. Perfect for families, swimmers, and pool enthusiasts. Make sure you have everything you need for a perfect day at the pool!'
 
 items:

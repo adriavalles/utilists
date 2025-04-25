@@ -1,11 +1,11 @@
 ---
 layout: list
-title: "Winter trip"
-permalink: "/winter-vacation-checklist/"
+title: "Winter Trip"
+permalink: "/winter-vacation-packing-and-travel/"
 categories: [Winter, Trips]
 
 emoji: "❄️"
-subtitle: "Never Forget a Thing for Your Cold Weather Adventure"
+subtitle: "Complete packing guide for your winter vacation."
 description: "Planning a winter getaway to the Alps, Scandinavia, or any snowy destination? Our comprehensive packing checklist ensures you're perfectly prepared for cold weather adventures. From essential winter clothing and gear to must-have electronics and travel documents, this detailed guide covers everything you need for a comfortable and stress-free winter vacation. Whether you're hitting the slopes or exploring winter cities, this checklist will help you pack smart and stay warm."
 
 items:

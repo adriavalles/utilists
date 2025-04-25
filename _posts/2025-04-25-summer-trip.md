@@ -1,11 +1,11 @@
 ---
 layout: list
-title: "Summer vacation"
-permalink: "/summer-vacation-checklist/"
+title: "Summer Trip"
+permalink: "/summer-vacation-packing-and-travel/"
 categories: [Summer, Trips]
 
 emoji: "☀️"
-subtitle: "Ultimate Summer Vacation Packing Checklist."
+subtitle: "Complete packing list for your perfect summer getaway."
 description: "Never forget anything again with our comprehensive summer vacation packing list! Whether you're heading to tropical beaches, European cities, or mountain retreats, this ultimate checklist covers everything from essential clothing to tech gadgets, beach gear, and travel documents. Perfect for family vacations, romantic getaways, or solo adventures."
 
 items:
