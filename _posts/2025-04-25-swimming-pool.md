@@ -1,8 +1,8 @@
 ---
 layout: list
-title: "Pool Day"
-permalink: "/pool-day-essentials-and-gear/"
-categories: [Summer, Gym]
+title: "Swimming Pool"
+permalink: "/swimming-pool-essentials-and-gear/"
+categories: [Wellness, Summer]
 
 emoji: "🏊"
 subtitle: "Essential items for a perfect day at the pool."

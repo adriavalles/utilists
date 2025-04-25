@@ -2,7 +2,7 @@
 layout: list
 title: "Remote Office"
 permalink: "/remote-work-office-setup/"
-categories: [Work]
+categories: [Work, Home]
 
 emoji: "🖥️"
 subtitle: "Essential tools and setup for a productive home office."

@@ -2,7 +2,7 @@
 layout: list
 title: "Winter Trip"
 permalink: "/winter-vacation-packing-and-travel/"
-categories: [Winter, Trips]
+categories: [Travel]
 
 emoji: "❄️"
 subtitle: "Complete packing guide for your winter vacation."

@@ -2,7 +2,7 @@
 layout: list
 title: "Summer Trip"
 permalink: "/summer-vacation-packing-and-travel/"
-categories: [Summer, Trips]
+categories: [Travel, Summer]
 
 emoji: "☀️"
 subtitle: "Complete packing list for your perfect summer getaway."
