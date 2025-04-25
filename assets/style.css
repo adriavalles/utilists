@@ -1,11 +1,18 @@
-ul.utilists-preview {
-    padding:0;
+p.description {
+    font-size: 1.1em;
+    margin-bottom: 50px;
 }
+
+ul.utilists-preview {
+    padding: 0;
+}
+
 .utilists-preview a {
     color: #000;
     text-decoration: none;
-    border-bottom:1px solid #b8b8b8;
+    border-bottom: 1px solid #b8b8b8;
 }
+
 .utilists-preview a:hover {
     color: #000;
     text-decoration: none;
@@ -23,7 +30,7 @@ ul.utilist {
 
 ul.utilist li.done {
     text-decoration: line-through;
-    color:#CCC;
+    color: #CCC;
 }
 
 p#contribute small {
@@ -38,22 +45,25 @@ p#contribute a {
 }
 
 p#contribute a:hover {
-    border:none;
+    border: none;
 }
 
 #awards {
     margin-top: 50px;
     font-size: 0.85em;
 }
+
 #awards #techbrunch {
     color: #089e00;
     font-weight: bold;
     font-size: 1.3em;
 }
+
 #awards #timer {
     font-family: serif;
     font-size: 1.3em;
 }
+
 #awards #mashed {
     color: #00aeef;
     font-weight: bold;
@@ -63,14 +73,31 @@ p#contribute a:hover {
 footer#page-footer {
     text-align: center;
     font-size: 0.8em;
-    margin:20px 0;
+    margin: 20px 0;
 }
 
 @media (max-width: 576px) {
     .jumbotron #emoji-jumbo {
         font-size: 3rem;
     }
+
     .jumbotron h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
+
+    p.description {
+        font-size: 1rem;
+    }
+
+    span.tagline {
+        display: none;
+    }
+}
+
+.no-border {
+    border: none;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

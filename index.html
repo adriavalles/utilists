@@ -1,50 +1,60 @@
 ---
 layout: default
 ---
-<nav class="navbar">
-</nav>
+
+<nav class="navbar"></nav>
 <div class="jumbotron">
     <h1 class="display-4">uti<strong>lists</strong></h1>
     <h2 class="lead">{{ site.tagline }}</h2>
 </div>
-<ul class="row">
-    <p>
-        {{ site.description }}
-    </p>
-</ul>
+<p class="description">{{ site.description }}</p>
 <ul class="row utilists-preview">
-    {% for post in site.posts %}
+    {% assign posts = site.posts | sort: 'title' %} {% for post in posts %}
     <li class="col-md-4 list-unstyled media mb-5 position-relative">
         <span class="align-self-center mr-3 h1">{{ post.emoji }}</span>
         <div class="media-body">
-            <h4 class="mt-0"><a href="{{ post.permalink | relative_url }}" class="stretched-link"  title="{{ post.subtitle }}">{{ post.title }}</a></h4>
+            <h4 class="mt-0">
+                <a href="{{ post.permalink | relative_url }}" class="stretched-link" title="{{ post.subtitle }}">{{
+                    post.title }}</a>
+            </h4>
             <p class="mb-0">{{ post.subtitle }}</p>
         </div>
     </li>
     {% endfor %}
 </ul>
 <p id="contribute" class="text-center text-muted">
-    <small>Spotted a missing item or want to create a new list? We'd love your contributions. <a href="https://github.com/adriavalles/utilists" target="_blank" title="Contribute to utilists on GitHub">Open a pull request</a> in GitHub!</small>
-    <iframe src="https://ghbtns.com/github-btn.html?user=adriavalles&repo=utilists&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub" class="align-middle"></iframe>
+    <small>Spotted a missing item or want to create a new list? We'd love your
+        contributions.
+        <a href="https://github.com/adriavalles/utilists" target="_blank" title="Contribute to utilists on GitHub">Open
+            a pull request</a>
+        in GitHub!</small>
+    <iframe src="https://ghbtns.com/github-btn.html?user=adriavalles&repo=utilists&type=star&count=true" width="150"
+        height="20" title="GitHub" class="align-middle no-border no-scroll"></iframe>
 </p>
 <div id="awards">
     <h5>Featured in Top Invented Publications</h5>
     <div class="row">
         <blockquote class="col-sm-4">
             <p>
-                "A revolutionary productivity game-changer! utilists transformed how I pack and plan, saving me hours of mental energy and countless 'I forgot' moments. Their travel checklists are pure gold."
+                "A revolutionary productivity game-changer! utilists transformed how I
+                pack and plan, saving me hours of mental energy and countless 'I forgot'
+                moments. Their travel checklists are pure gold."
             </p>
             <footer><cite id="techbrunch">TechBrunch</cite></footer>
         </blockquote>
         <blockquote class="col-sm-4">
             <p>
-                "Finally, a planning tool that thinks of everything! From daily essentials to life's biggest moments, utilists brings peace of mind to modern living. A must-have for anyone who values smart organization."
+                "Finally, a planning tool that thinks of everything! From daily
+                essentials to life's biggest moments, utilists brings peace of mind to
+                modern living. A must-have for anyone who values smart organization."
             </p>
             <footer><cite id="timer">The New Yankee Timer</cite></footer>
         </blockquote>
         <blockquote class="col-sm-4">
             <p>
-                "The Swiss Army knife of checklist apps! Whether you're planning a world tour or setting up a home office, utilists' comprehensive guides ensure you're always prepared for success."
+                "The Swiss Army knife of checklist apps! Whether you're planning a world
+                tour or setting up a home office, utilists' comprehensive guides ensure
+                you're always prepared for success."
             </p>
             <footer><cite id="mashed">Mashed</cite></footer>
         </blockquote>

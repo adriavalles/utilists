@@ -3,8 +3,8 @@ layout: default
 is_list: true
 ---
 <nav class="navbar navbar-light">
-    <a href="{{ site.url }}" class="navbar-brand">uti<strong>lists</strong></a>
-    <span class="navbar-text">{{ site.tagline }}</span>
+    <a href="{{ site.url }}" class="navbar-brand">&larr; uti<strong>lists</strong></a>
+    <span class="navbar-text tagline">{{ site.tagline }}</span>
 </nav>
 
 <div class="jumbotron">
@@ -16,7 +16,8 @@ is_list: true
         </div>
     </div>
 </div>
-<p>
+
+<p class="description">
     {{ page.description }}
 </p>
 
@@ -33,17 +34,17 @@ is_list: true
     </div>
     <div class="col-lg-4">
         {% for category in page.categories %}
-        {% if site.categories[category].size <= 1%} {% continue %} {% endif %}
-        <h5>Other {{ category | downcase }} checklists</h5>
-        <ul>
-            {% for post in site.categories[category] %}
-            {% if post == page %} {% continue %} {% endif %}
-            <li>
-                <a href="{{ post.permalink | relative_url }}" title="{{ post.subtitle }}">{{ post.title }}</a>
-            </li>
+        {% if site.categories[category].size <= 1%} {% continue %} {% endif %} <h5>Other {{ category | downcase }}
+            checklists</h5>
+            <ul>
+                {% for post in site.categories[category] %}
+                {% if post == page %} {% continue %} {% endif %}
+                <li>
+                    <a href="{{ post.permalink | relative_url }}" title="{{ post.subtitle }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
             {% endfor %}
-        </ul>
-        {% endfor %}
     </div>
 </div>
 
