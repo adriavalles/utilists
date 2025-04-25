@@ -2,7 +2,7 @@
 layout: list
 title: "Baby Travel"
 permalink: "/baby-travel-essentials-and-gear/"
-categories: [Baby, Trips]
+categories: [Baby, Travel]
 
 emoji: "🧑‍🍼"
 subtitle: "Essential items for a stress-free flight with your baby."
