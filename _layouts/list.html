@@ -4,15 +4,17 @@ is_list: true
 ---
 <nav class="navbar navbar-light">
     <a href="{{ site.url }}" class="navbar-brand">&larr; uti<strong>lists</strong></a>
-    <span class="navbar-text tagline">{{ site.tagline }}</span>
+    <span class="navbar-text" id="header-tagline">{{ site.tagline }}</span>
 </nav>
 
-<div class="jumbotron">
-    <div class="media">
-        <span id="emoji-jumbo" class="align-self-center mr-3">{{ page.emoji }}</span>
-        <div class="media-body">
+<div class="bg-light py-5 px-3 rounded-3 border" id="header-block">
+    <div class="d-flex align-items-center">
+        <div class="flex-shrink-0 display-1">
+            <span class="mx-3">{{ page.emoji }}</span>
+        </div>
+        <div class="flex-grow-1 ms-3">
             <h1 class="display-4">{{ page.title }}</h1>
-            <h2 class="lead">{{ page.subtitle }}</h2>
+            <h2 class="h5 fw-light">{{ page.subtitle }}</h2>
         </div>
     </div>
 </div>
@@ -40,7 +42,7 @@ is_list: true
                 {% for post in site.categories[category] %}
                 {% if post == page %} {% continue %} {% endif %}
                 <li>
-                    <a href="{{ post.permalink | relative_url }}" title="{{ post.subtitle }}">{{ post.title }}</a>
+                    <a href="{{ post.permalink | relative_url }}" title="{{ post.subtitle }}" class="link-secondary link-offset-1 link-underline-opacity-25 link-underline-opacity-0-hover">{{ post.title }}</a>
                 </li>
                 {% endfor %}
             </ul>

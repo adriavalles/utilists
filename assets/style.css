@@ -1,22 +1,15 @@
 p.description {
-    font-size: 1.1em;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: justify;
 }
 
-ul.utilists-preview {
+ul#utilists-preview {
     padding: 0;
 }
 
-.utilists-preview a {
-    color: #000;
-    text-decoration: none;
-    border-bottom: 1px solid #b8b8b8;
-}
-
-.utilists-preview a:hover {
-    color: #000;
-    text-decoration: none;
-    border: none;
+ul#utilists-preview .emoji {
+    font-size: 2.8em;
 }
 
 #emoji-jumbo {
@@ -77,19 +70,12 @@ footer#page-footer {
 }
 
 @media (max-width: 576px) {
-    .jumbotron #emoji-jumbo {
-        font-size: 3rem;
-    }
-
-    .jumbotron h1 {
-        font-size: 2.5rem;
-    }
 
     p.description {
         font-size: 1rem;
     }
 
-    span.tagline {
+    #header-tagline {
         display: none;
     }
 }
