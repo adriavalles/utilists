@@ -5,8 +5,13 @@ layout: default
 </nav>
 <div class="jumbotron">
     <h1 class="display-4">uti<strong>lists</strong></h1>
-    <h2 class="lead">{{ site.description }}</h2>
+    <h2 class="lead">{{ site.tagline }}</h2>
 </div>
+<ul class="row">
+    <p>
+        {{ site.description }}
+    </p>
+</ul>
 <ul class="row utilists-preview">
     {% for post in site.posts %}
     <li class="col-md-4 list-unstyled media mb-5 position-relative">
@@ -19,27 +24,27 @@ layout: default
     {% endfor %}
 </ul>
 <p id="contribute" class="text-center text-muted">
-    <small>Want to contribute? Missing an item or a list? <a href="https://github.com/adriavalles/utilists" target="_blank" title="GitHub profile for utilists project">Create a pull request</a> in GitHub!</small>
-    <iframe src="https://ghbtns.com/github-btn.html?user=adriavalles&repo=utilists&type=star&count=true" class="align-middle" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+    <small>Spotted a missing item or want to create a new list? We'd love your contributions. <a href="https://github.com/adriavalles/utilists" target="_blank" title="Contribute to utilists on GitHub">Open a pull request</a> in GitHub!</small>
+    <iframe src="https://ghbtns.com/github-btn.html?user=adriavalles&repo=utilists&type=star&count=true" frameborder="0" scrolling="0" width="150" height="20" title="GitHub" class="align-middle"></iframe>
 </p>
 <div id="awards">
-    <h5>They talk about us...</h5>
+    <h5>Featured in Top Invented Publications</h5>
     <div class="row">
         <blockquote class="col-sm-4">
             <p>
-                You won't forget *that* thing anymore in your holiday trips.
+                "A revolutionary productivity game-changer! utilists transformed how I pack and plan, saving me hours of mental energy and countless 'I forgot' moments. Their travel checklists are pure gold."
             </p>
             <footer><cite id="techbrunch">TechBrunch</cite></footer>
         </blockquote>
         <blockquote class="col-sm-4">
             <p>
-                The best tool in the market for clueless people. Perfect for fishes... oh yeah, fishes forget everything.
+                "Finally, a planning tool that thinks of everything! From daily essentials to life's biggest moments, utilists brings peace of mind to modern living. A must-have for anyone who values smart organization."
             </p>
             <footer><cite id="timer">The New Yankee Timer</cite></footer>
         </blockquote>
         <blockquote class="col-sm-4">
             <p>
-                How many times have you forgotten your smartphone charger when travelling? With this tool... never again!
+                "The Swiss Army knife of checklist apps! Whether you're planning a world tour or setting up a home office, utilists' comprehensive guides ensure you're always prepared for success."
             </p>
             <footer><cite id="mashed">Mashed</cite></footer>
         </blockquote>
