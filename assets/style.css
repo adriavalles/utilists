@@ -69,6 +69,10 @@ footer#page-footer {
     margin: 20px 0;
 }
 
+.progress {
+    height: 5px;
+}
+
 @media (max-width: 576px) {
 
     p.description {
