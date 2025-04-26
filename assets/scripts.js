@@ -10,11 +10,12 @@ function updateProgress() {
     progressElement.setAttribute('aria-valuenow', progress);
 }
 
-document.querySelectorAll("ul.utilist li").forEach(function (item) {
-    item.addEventListener("click", function (e) {
-        e.target.classList.toggle('done');
+document.querySelectorAll('ul.utilist .form-check-input').forEach(function(checkbox) {
+    checkbox.addEventListener('change', function() {
+        const listItem = this.closest('li');
+        listItem.classList.toggle('done', this.checked);
         updateProgress();
-    })
+    });
 });
 
 // Initialize progress on page load
