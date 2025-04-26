@@ -39,7 +39,11 @@ is_list: true
         {% endfor %}
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-lg-4" id="sidebar">
+        <p class="text-center">
+            <button type="button" class="btn btn-outline-secondary btn-sm" id="clear-checked-items">✨ Clear checked items</button>
+        </p>
+
         {% for category in page.categories %}
         {% if site.categories[category].size <= 1%} {% continue %} {% endif %} <h5>Other {{ category | downcase }}
             checklists</h5>

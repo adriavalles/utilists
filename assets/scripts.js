@@ -18,5 +18,14 @@ document.querySelectorAll('ul.utilist .form-check-input').forEach(function(check
     });
 });
 
+document.getElementById('clear-checked-items').addEventListener('click', function() {
+    document.querySelectorAll('ul.utilist li').forEach(function(item) {
+        item.classList.remove('done');
+        const checkbox = item.querySelector('.form-check-input');
+        if (checkbox) checkbox.checked = false;
+    });
+    updateProgress();
+});
+
 // Initialize progress on page load
 updateProgress();
