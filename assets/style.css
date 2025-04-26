@@ -99,17 +99,6 @@ footer#page-footer {
     height: 5px;
 }
 
-@media (max-width: 576px) {
-
-    p.description {
-        font-size: 1rem;
-    }
-
-    #header-tagline {
-        display: none;
-    }
-}
-
 .no-border {
     border: none;
 }
