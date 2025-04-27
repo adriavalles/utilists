@@ -33,7 +33,7 @@ is_list: true
             <li class="list-group-item">
                 <input class="form-check-input me-2" type="checkbox" value="" id="{{ item | slugify }}">
                 <label class="form-check-label stretched-link" for="{{ item | slugify }}">{{ item }}</label>
-              </li>
+            </li>
             {% endfor %}
         </ul>
         {% endfor %}
@@ -41,8 +41,12 @@ is_list: true
 
     <div class="col-lg-4" id="sidebar">
         <p class="text-center">
-            <button type="button" class="btn btn-outline-secondary btn-sm" id="clear-checked-items">✨ Clear checked items</button>
+        <div class="btn-group btn-group-sm w-100" role="group" aria-label="Action buttons">
+            <button type="button" class="btn btn-outline-secondary" id="clear-checked-items"><i class="bi bi-arrow-clockwise"></i> Reset list progress</button>
+            <button type="button" class="btn btn-outline-secondary" id="toggle-checked-items-visibility"><i class="bi bi-eye-slash"></i> Hide checked items</button>
+        </div>
         </p>
+
 
         {% for category in page.categories %}
         {% if site.categories[category].size <= 1%} {% continue %} {% endif %} <h5>Other {{ category | downcase }}
@@ -62,7 +66,7 @@ is_list: true
 
 <div class="row">
     <div class="col-lg-12">
-        <p class="text-center">Download, print, or save this complete guide for stress-free packing!</p>
+        <p class="text-center text-secondary"><i class="bi bi-file-earmark-arrow-down"></i> Download, print, or save this complete guide for stress-free packing!</p>
     </div>
 </div>
 
