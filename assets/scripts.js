@@ -13,6 +13,8 @@ const elements = {
 
 // Progress bar functions
 function updateProgress() {
+    if (!elements.progressBar) return;
+
     const totalItems = elements.listItems.length;
     const doneItems = document.querySelectorAll('ul.utilist li.done').length;
     const progress = (doneItems / totalItems) * 100;
@@ -79,12 +81,19 @@ function resetListProgress() {
 
 // Event Listeners
 function initializeEventListeners() {
-    elements.checkboxes.forEach(checkbox => {
-        checkbox.addEventListener('change', () => handleCheckboxChange(checkbox));
-    });
+    if (elements.checkboxes) {
+        elements.checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', () => handleCheckboxChange(checkbox));
+        });
+    }
 
-    elements.clearButton.addEventListener('click', resetListProgress);
-    elements.toggleButton.addEventListener('click', toggleAllCheckedItemsVisibility);
+    if (elements.clearButton) {
+        elements.clearButton.addEventListener('click', resetListProgress);
+    }
+
+    if (elements.toggleButton) {
+        elements.toggleButton.addEventListener('click', toggleAllCheckedItemsVisibility);
+    }
 }
 
 initializeEventListeners();
