@@ -1,3 +1,10 @@
+img#utilists-logo {
+    border-radius: 22%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.23);
+    width: 100px;
+    height: 100px;
+}
+
 p.description {
     margin-bottom: 30px;
     margin-top: 30px;
@@ -105,4 +112,11 @@ footer#page-footer {
 
 .no-scroll {
     overflow: hidden;
+}
+
+@media screen and (max-width: 768px) {
+    img#utilists-logo {
+        width: 75px;
+        height: 75px;
+    }
 }

@@ -4,9 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/x-icon" href="{{ " favicon.ico" | relative_url }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ " favicon-32x32.png" | relative_url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ " favicon-16x16.png" | relative_url }}">
+    <meta name="theme-color" content="#f8f9fa">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="utilists">
+    <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}" />
+    <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | relative_url }}">
+    <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
 
     {% if layout.is_list %}
     <title>{{page.title}} - {{page.subtitle}} | {{site.title}}</title>
@@ -20,7 +24,6 @@
 </head>
 
 <body>
-
     <div class="container">
         {{ content }}
         <footer id="page-footer">utilists &copy; {{ site.time | date: "%Y" }} <a href="https://www.adriavalles.net" title="Adrià Vallès" class="link-underline-light">adrià vallès</a> </footer>
