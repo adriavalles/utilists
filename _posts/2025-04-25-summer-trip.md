@@ -9,7 +9,17 @@ subtitle: "Complete packing list for your perfect summer getaway."
 description: "Never forget anything again with our comprehensive summer vacation packing list! Whether you're heading to tropical beaches, European cities, or mountain retreats, this ultimate checklist covers everything from essential clothing to tech gadgets, beach gear, and travel documents. Perfect for family vacations, romantic getaways, or solo adventures."
 
 items:
-    - name: Essential
+    - name: Essentials
+      items:
+        - 'First aid kit'
+        - 'Passport or ID'
+        - 'Phone and charger'
+        - 'Prescription medications'
+        - 'Sunscreen'
+        - 'Travel insurance'
+        - 'Wallet with cash and cards'
+        - 'Water bottle'
+    - name: Clothing
       items:
         - 'Belt'
         - 'Comfortable walking shoes'
@@ -48,8 +58,6 @@ items:
         - 'Photo camera charger'
         - 'Portable charger/power bank'
         - 'SD card for the photo camera'
-        - 'Smartphone'
-        - 'Smartphone charger'
         - 'Tablet'
         - 'Universal adapter'
         - 'Waterproof phone case'
@@ -77,12 +85,10 @@ items:
     - name: Health & Safety
       items:
         - 'Band-aids'
-        - 'First aid kit'
         - 'Hand sanitizer'
         - 'Insect repellent'
         - 'Motion sickness pills'
         - 'Pain relievers'
-        - 'Prescription medications'
     - name: Documents & Money
       items:
         - 'Boarding passes'
@@ -92,8 +98,6 @@ items:
         - 'Credit cards'
         - 'Emergency contact list'
         - 'Hotel reservations'
-        - 'Passport or ID'
-        - 'Travel insurance'
         - 'Vaccination records'
     - name: Entertainment
       items:

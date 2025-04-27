@@ -9,9 +9,18 @@ subtitle: "Complete checklist for a smooth and organized house move."
 description: "Moving to a new home? Our comprehensive moving checklist covers everything from packing supplies to essential documents and utilities setup. Perfect for first-time movers and experienced relocators alike, this guide ensures you won't forget any crucial steps in your moving process."
 
 items:
+    - name: Essentials
+      items:
+        - 'Boxes and packing supplies'
+        - 'First aid kit'
+        - 'Important documents folder'
+        - 'Medications'
+        - 'Phone and charger'
+        - 'Snacks and water'
+        - 'Tool kit'
+        - 'Toilet paper'
     - name: Packing Supplies
       items:
-        - 'Boxes (various sizes)'
         - 'Bubble wrap'
         - 'Cardboard boxes'
         - 'Duct tape'
@@ -47,17 +56,10 @@ items:
         - 'Phone service'
         - 'Trash service'
         - 'Water service'
-    - name: Moving Day Essentials
+    - name: Moving Day Supplies
       items:
         - 'Basic cleaning supplies'
         - 'Change of clothes'
-        - 'First aid kit'
-        - 'Important documents folder'
-        - 'Medications'
-        - 'Phone chargers'
-        - 'Snacks and water'
-        - 'Toilet paper'
-        - 'Tool kit'
     - name: New Home Setup
       items:
         - 'Appliance manuals'
@@ -87,7 +89,6 @@ items:
         - 'Carbon monoxide detector'
         - 'Emergency contact list'
         - 'Fire escape plan'
-        - 'First aid kit'
         - 'Home security system'
         - 'Locksmith contact'
         - 'Neighborhood watch info'

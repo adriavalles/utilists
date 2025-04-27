@@ -9,20 +9,25 @@ subtitle: "Essential items for emergency preparedness at home."
 description: "Be prepared for any emergency with our comprehensive home emergency kit checklist. From natural disasters to power outages, this guide ensures you have all the necessary supplies to keep your family safe and comfortable during unexpected situations."
 
 items:
-    - name: Basic Supplies
+    - name: Essentials
       items:
         - 'Batteries (various sizes)'
         - 'Battery-powered radio'
+        - 'Emergency blanket'
+        - 'First aid kit'
+        - 'Flashlights'
+        - 'Food and water (3-day supply)'
+        - 'Medications'
+        - 'Phone charger'
+        - 'Whistle'
+    - name: Basic Supplies
+      items:
         - 'Candles and matches'
         - 'Duct tape'
-        - 'Emergency blanket'
-        - 'Flashlights'
         - 'Multi-tool'
         - 'Plastic sheeting'
-        - 'Portable phone charger'
         - 'Rope'
         - 'Scissors'
-        - 'Whistle'
     - name: First Aid
       items:
         - 'Adhesive bandages'
@@ -35,7 +40,6 @@ items:
         - 'Gauze pads'
         - 'Medical tape'
         - 'Pain relievers'
-        - 'Prescription medications'
         - 'Thermometer'
         - 'Tweezers'
     - name: Food & Water

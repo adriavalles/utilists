@@ -9,6 +9,16 @@ subtitle: "Essential items for a successful business trip."
 description: "Never forget anything important for your business trip with our comprehensive packing checklist. From professional attire to essential electronics and travel documents, this guide ensures you're fully prepared for meetings, presentations, and networking opportunities."
 
 items:
+    - name: Essentials
+      items:
+        - 'Business cards'
+        - 'Company credit card'
+        - 'Laptop and charger'
+        - 'Passport/ID'
+        - 'Phone and charger'
+        - 'Professional attire'
+        - 'Travel documents'
+        - 'Wallet'
     - name: Professional Attire
       items:
         - 'Blazer or suit jacket'
@@ -22,17 +32,14 @@ items:
         - 'Ties or scarves'
     - name: Electronics
       items:
-        - 'Business cards'
         - 'Chargers and adapters'
         - 'External hard drive'
         - 'Headphones'
-        - 'Laptop'
         - 'Laptop stand'
         - 'Mobile hotspot'
         - 'Mouse'
         - 'Notebook'
         - 'Pen and highlighter'
-        - 'Phone'
         - 'Portable charger'
         - 'Presentation clicker'
         - 'Tablet'
@@ -41,11 +48,9 @@ items:
       items:
         - 'Boarding passes'
         - 'Business itinerary'
-        - 'Company credit card'
         - 'Conference tickets'
         - 'Hotel confirmation'
         - 'Meeting notes'
-        - 'Passport/ID'
         - 'Travel insurance'
         - 'Visa (if required)'
     - name: Personal Care

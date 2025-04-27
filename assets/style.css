@@ -96,6 +96,9 @@ ul#utilists-preview .emoji {
 
 ul.utilist {
     margin-bottom: 20px;
+}
+
+ul.utilist li label {
     cursor: pointer;
 }
 

@@ -9,6 +9,12 @@ subtitle: "Essential items for creating a peaceful meditation space."
 description: "Create your perfect meditation sanctuary with our comprehensive setup checklist. From comfort items to ambiance enhancers, this guide helps you design a peaceful space that supports your meditation practice and promotes mindfulness."
 
 items:
+    - name: Essentials
+      items:
+        - 'Comfortable seating'
+        - 'Meditation timer'
+        - 'Quiet space'
+        - 'Water bottle'
     - name: Comfort & Seating
       items:
         - 'Cushions'
@@ -54,10 +60,8 @@ items:
     - name: Organization
       items:
         - 'Journal'
-        - 'Meditation timer'
         - 'Pen and paper'
         - 'Storage for items'
-        - 'Water bottle'
     - name: Technology
       items:
         - 'Charging station'
