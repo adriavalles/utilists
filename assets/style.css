@@ -1,12 +1,4 @@
 /* Layout and Structure */
-.no-scroll {
-    overflow: hidden;
-}
-
-.no-border {
-    border: none;
-}
-
 .progress {
     height: 5px;
 }
