@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="bg-light mt-4 py-5 px-3 rounded-3 border" id="header-block">
+<section aria-labelledby="header-heading" class="bg-light mt-4 py-5 px-3 rounded-3 border" id="header-block">
     <div class="d-flex align-items-center">
         <div class="flex-shrink-0 display-1">
             <span class="mx-3"><img src="{{ "/assets/imgs/utilists_logo_small.png" | relative_url }}" alt="utilists logo" width="100" height="100" id="utilists-logo"></span>
@@ -12,30 +12,39 @@ layout: default
             <h2 class="h5 fw-light">{{ site.tagline }}</h2>
         </div>
     </div>
-</div>
+</section>
 
-<p class="description">{{ site.description }}</p>
+<section aria-labelledby="description-heading">
+    <h3 id="description-heading" class="visually-hidden">About utilists</h3>
+    <p class="description">{{ site.description }}</p>
+</section>
 
-<ul class="row" id="utilists-preview">
-    {% assign posts = site.posts | sort: 'title' %} {% for post in posts %}
-    <li class="col-md-4 list-unstyled d-flex mb-5 position-relative">
-        <span class="align-self-center ms-2 me-2 flex-shrink-0 emoji">{{ post.emoji }}</span>
-        <div class="flex-grow-1 ms-3">
-            <h4 class="mt-0">
-                <a href="{{ post.permalink | relative_url }}" class="stretched-link link-dark link-opacity-50-hover link-offset-1 link-underline-opacity-25 link-underline-opacity-0-hover" title="{{ post.subtitle }}">{{ post.title }}</a>
-            </h4>
-            <p class="mb-0">{{ post.subtitle }}</p>
-        </div>
-    </li>
-    {% endfor %}
-</ul>
+<section aria-labelledby="lists-heading">
+    <h3 id="lists-heading" class="visually-hidden">Available checklists</h3>
+    <ul class="row" id="utilists-preview">
+        {% assign posts = site.posts | sort: 'title' %} {% for post in posts %}
+        <li class="col-md-4 list-unstyled d-flex mb-5 position-relative">
+            <span class="align-self-center ms-2 me-2 flex-shrink-0 emoji">{{ post.emoji }}</span>
+            <div class="flex-grow-1 ms-3">
+                <h4 class="mt-0">
+                    <a href="{{ post.permalink | relative_url }}" class="stretched-link link-dark link-opacity-50-hover link-offset-1 link-underline-opacity-25 link-underline-opacity-0-hover" title="{{ post.subtitle }}">{{ post.title }}</a>
+                </h4>
+                <p class="mb-0">{{ post.subtitle }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
 
-<p id="contribute" class="text-center text-muted">
-    <small>Spotted a missing item or want to create a new list? We'd love your contributions. <i class="bi bi-github"></i> <a href="https://github.com/adriavalles/utilists" target="_blank" title="Contribute to utilists on GitHub">Open a pull request</a> in GitHub!</small>
-</p>
+<section aria-labelledby="contribute-heading">
+    <h3 id="contribute-heading" class="visually-hidden">Contribution</h3>
+    <p id="contribute" class="text-center text-muted">
+        <small>Spotted a missing item or want to create a new list? We'd love your contributions. <i class="bi bi-github"></i> <a href="https://github.com/adriavalles/utilists" target="_blank" title="Contribute to utilists on GitHub">Open a pull request</a> in GitHub!</small>
+    </p>
+</section>
 
-<div id="awards">
-    <h5>Featured in...</h5>
+<section aria-labelledby="awards-heading" id="awards">
+    <h5 id="awards-heading">Featured in...</h5>
     <div class="row">
         <blockquote class="col-sm-4">
             <p>
@@ -56,4 +65,4 @@ layout: default
             <footer><cite id="mashed">Mashed</cite></footer>
         </blockquote>
     </div>
-</div>
+</section>
