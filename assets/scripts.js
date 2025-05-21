@@ -2,22 +2,34 @@
 let showCheckedItems = true;
 
 // DOM Elements
-const elements = {
+const elements = typeof document !== 'undefined' ? {
     progressBar: document.querySelector('.progress-bar'),
     progressElement: document.querySelector('.progress'),
     clearButton: document.getElementById('clear-checked-items'),
     toggleButton: document.getElementById('toggle-checked-items-visibility'),
     listItems: document.querySelectorAll('ul.utilist li'),
     checkboxes: document.querySelectorAll('ul.utilist .form-check-input')
+} : {
+    progressBar: null,
+    progressElement: { setAttribute() {} },
+    clearButton: null,
+    toggleButton: null,
+    listItems: [],
+    checkboxes: []
 };
 
 // Progress bar functions
+function calculateProgress(totalItems, doneItems) {
+    if (totalItems === 0) return 0;
+    return (doneItems / totalItems) * 100;
+}
+
 function updateProgress() {
     if (!elements.progressBar) return;
 
     const totalItems = elements.listItems.length;
     const doneItems = document.querySelectorAll('ul.utilist li.done').length;
-    const progress = (doneItems / totalItems) * 100;
+    const progress = calculateProgress(totalItems, doneItems);
 
     elements.progressBar.style.width = `${progress}%`;
     elements.progressElement.setAttribute('aria-valuenow', progress);
@@ -98,3 +110,11 @@ function initializeEventListeners() {
 
 initializeEventListeners();
 updateProgress();
+
+// Export functions for testing in Node environment
+if (typeof module !== 'undefined') {
+    module.exports = {
+        calculateProgress,
+        toggleItemVisibility
+    };
+}
