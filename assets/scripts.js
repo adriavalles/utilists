@@ -96,5 +96,25 @@ function initializeEventListeners() {
     }
 }
 
+// Restore state from localStorage
+function initializeLocalStorage() {
+    document.addEventListener('DOMContentLoaded', () => {
+        Object.entries(localStorage).forEach(([key, value]) => {
+            if (!key.includes(window.location.pathname) || value === 'false') return;
+            const localKey = key.split(window.location.pathname)[1];
+            document.getElementById(localKey).click();
+        });
+    });
+  
+    document.addEventListener('click', (event) => {
+        if (event.target.tagName === 'INPUT') {
+            const key = window.location.pathname + event.target.id;
+            const value = !event.target.parentElement.classList.contains('done');
+            localStorage.setItem(key, value);
+        }
+    });
+}
+
+initializeLocalStorage();
 initializeEventListeners();
 updateProgress();
